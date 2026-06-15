@@ -32,35 +32,41 @@ def solution(graph, start):
     dfs(start)
     return answer 
 
+
+print(solution(
+    [['A', 'B'], ['B', 'C'], ['C', 'D'], ['D', 'E']],
+    'A'
+))
+
 print(solution(
     [['A', 'B'], ['A', 'C'], ['B', 'D'], ['B', 'E'], ['C', 'F'], ['E', 'F']],
     'A'
 ))
 
-# 템플릿화
+# # 템플릿화
 
-def solution(graph, start):
-    # 1. 인접 리스트 만들기
-    adj = {}
+# def solution(graph, start):
+#     # 1. 인접 리스트 만들기
+#     adj = {}
 
-    for a, b in graph:
-        # a, b 칸 없으면 만들기
+#     for a, b in graph:
+#         # a, b 칸 없으면 만들기
 
-        # 방향 없는 그래프니까 양쪽 연결하기
+#         # 방향 없는 그래프니까 양쪽 연결하기
 
-    # 2. 방문 기록, 정답 리스트 만들기
-    visited = set()
-    answer = []
+#     # 2. 방문 기록, 정답 리스트 만들기
+#     visited = set()
+#     answer = []
 
-    # 3. DFS 함수 만들기
-    def dfs(node):
-        # 현재 노드 방문 처리
-        # answer에 넣기
-        # 이웃 노드 확인
-        # 안 갔으면 dfs 호출
+#     # 3. DFS 함수 만들기
+#     def dfs(node):
+#         # 현재 노드 방문 처리
+#         # answer에 넣기
+#         # 이웃 노드 확인
+#         # 안 갔으면 dfs 호출
 
-    # 4. 시작 노드에서 DFS 시작
-    dfs(start)
+#     # 4. 시작 노드에서 DFS 시작
+#     dfs(start)
 
-    # 5. 방문 순서 반환
-    return answer
+#     # 5. 방문 순서 반환
+#     return answer
