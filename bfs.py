@@ -1,5 +1,6 @@
 # 너비 우선 탐색
 # graph, start가 주어지는 군. graph는 간선이고, 인접리스트로 바꾸어야 겠군.
+# 방향 없는 그래프라는 말이 없어!
 # 큐를 만들어야겠군. 
 # start에서 출발해서 queue에 넣고, 방문처리하고, queue에서 하나씩 꺼내서, 꺼낸 노드의 이웃 중 안 간 노드를 순서대로 줄세워서, queue에 넣어야 겠군. 
 # 차례대로 방문해서, 방문 순서를 return해야겠군.
@@ -14,10 +15,10 @@ def solution(graph, start):
             adj[a] = []
         if b not in adj:
             adj[b] = []
-
-        # 방향없는 그래프니까 양방향으로 저장하기
+    
+         # 문제에서 [출발 노드, 도착 노드] 라고 했으므로 한쪽 방향만 저장. 
         adj[a].append(b)
-        adj[b].append(a)
+    
     visited = set()
     answer = []
 
@@ -39,5 +40,10 @@ def solution(graph, start):
 
 print(solution(
     [(1, 2), (1, 3), (2, 4), (2, 5), (3, 6), (3, 7), (4, 8), (5, 8), (6, 9), (7, 9)],
+    1
+))
+
+print(solution(
+    [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 0)],
     1
 ))
