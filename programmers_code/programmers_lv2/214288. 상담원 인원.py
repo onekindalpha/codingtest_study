@@ -47,7 +47,7 @@ def solution(k, n, reqs):
     def dfs(type_num, remaining, total_wait):
         nonlocal answer
 
-        #k번 유형까지 다 배정한 경우.
+        #k번 유형까지 다 배정한 경우.d
         if type_num == k +1:
             if remaining == 0:
                 answer = min(answer, total_wait)
