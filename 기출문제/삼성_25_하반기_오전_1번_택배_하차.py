@@ -285,5 +285,5 @@ while True:
     if not left_removed and not right_removed:
         break
 #하차된 택배 번호를 순서대로 출력한다.
-#(*answer)은 리스트를 풀어서 출력
-print(*answer)
+for num in answer:
+    print(num)
