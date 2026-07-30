@@ -135,7 +135,7 @@ def solution():
         }
         #오늘 전파를 당한 학생 표시
         defended = [[False] * N for _ in range(N)]
-                    
+
         for leader in leaders:
             r, c = leader
             # 오늘 저녁에 전파를 당한 대표자는 전파자 역할을 못 함
