@@ -1,4 +1,4 @@
-# 디버깅해서 풀었음. 
+# 디버깅해서 풀었음.
 
 def binary_count(num):
     binary_num = bin(num)
@@ -7,7 +7,7 @@ def binary_count(num):
     one_count = binary_num.count("1")
     #print(one_count)
     return one_count
-def solution(n):
+def solution(n): 
     answer = 0
     x = n + 1
     # #이건 넣어도 되나 모르겠네
